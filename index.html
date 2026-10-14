@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Pulse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+        
+        body {
+            background-color: #0b0f19;
+            background-image: radial-gradient(circle at 50% 0%, #1a1f35 0%, #0b0f19 75%);
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary shadow-sm">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-danger fw-bold fs-4" href="#"><b>アニメパルス</b></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"><b>ホーム</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><b>概要</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html"><b>サービス</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><b>お問い合わせ</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Carousel Slider (AniVerse Style) -->
+    <div id="aniVerseHeroSlider" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel" data-bs-interval="4000">
+        
+        <!-- Indicators / Dots -->
+        <div class="carousel-indicators mb-4">
+            <button type="button" data-bs-target="#aniVerseHeroSlider" data-bs-slide-to="0" class="active rounded-pill" style="width: 35px; height: 5px;" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#aniVerseHeroSlider" data-bs-slide-to="1" class="rounded-pill" style="width: 35px; height: 5px;" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#aniVerseHeroSlider" data-bs-slide-to="2" class="rounded-pill" style="width: 35px; height: 5px;" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Slider Items -->
+        <div class="carousel-inner">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-item active position-relative" style="height: 75vh; min-height: 480px;">
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;"></div>
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
+                <div class="position-absolute bottom-0 start-0 w-100 h-75" style="background: linear-gradient(to top, rgba(11,15,25,0.95), rgba(11,15,25,0.4), transparent);"></div>
+
+                <div class="carousel-caption text-start h-100 d-flex flex-column justify-content-end pb-5 px-5 position-relative z-1">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-danger px-3 py-2 fw-bold text-uppercase">🔥 トレンド 1位</span>
+                        <span class="badge bg-dark border border-secondary text-light px-2 py-1">アクション / ファンタジー</span>
+                    </div>
+                    <h1 class="display-3 fw-extrabold text-white mb-2" style="letter-spacing: -1px;">劇場版「鬼滅の刃」無限城編</h1>
+                    <p class="lead text-light opacity-85 d-none d-md-block col-lg-7 mb-4">鬼舞辻無惨の無限に変化する城塞を舞台に、最強の柱たちが繰り広げる最後の壮絶な戦いが幕を開ける。</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-danger btn-lg px-4 fw-bold d-flex align-items-center gap-2 shadow-sm">
+                            <i class="bi bi-play-fill fs-4"></i> 今すぐ観る
+                        </button>
+                        <button class="btn btn-outline-light btn-lg px-4 fw-semibold d-flex align-items-center gap-2">
+                            <i class="bi bi-info-circle"></i> 詳細
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item position-relative" style="height: 75vh; min-height: 480px;">
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;"></div>
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
+                <div class="position-absolute bottom-0 start-0 w-100 h-75" style="background: linear-gradient(to top, rgba(11,15,25,0.95), rgba(11,15,25,0.4), transparent);"></div>
+
+                <div class="carousel-caption text-start h-100 d-flex flex-column justify-content-end pb-5 px-5 position-relative z-1">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-warning text-dark px-3 py-2 fw-bold text-uppercase">⚡ 新シーズン</span>
+                        <span class="badge bg-dark border border-secondary text-light px-2 py-1">スーパーナチュラル / 少年漫画</span>
+                    </div>
+                    <h1 class="display-3 fw-extrabold text-white mb-2" style="letter-spacing: -1px;">呪術廻戦「渋谷事変」</h1>
+                    <p class="lead text-light opacity-85 d-none d-md-block col-lg-7 mb-4">呪力が東京を飲み込む中、凄腕の呪術師たちが近代史最大の破滅的脅威を阻止しようと必死に戦う。</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-danger btn-lg px-4 fw-bold d-flex align-items-center gap-2 shadow-sm">
+                            <i class="bi bi-play-fill fs-4"></i> 今すぐ観る
+                        </button>
+                        <button class="btn btn-outline-light btn-lg px-4 fw-semibold d-flex align-items-center gap-2">
+                            <i class="bi bi-info-circle"></i> 詳細
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+<!-- Slide 3 -->
+            <div class="carousel-item position-relative" style="height: 75vh; min-height: 480px;">
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;"></div>
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
+                <div class="position-absolute bottom-0 start-0 w-100 h-75" style="background: linear-gradient(to top, rgba(11,15,25,0.95), rgba(11,15,25,0.4), transparent);"></div>
+
+                <div class="carousel-caption text-start h-100 d-flex flex-column justify-content-end pb-5 px-5 position-relative z-1">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-primary px-3 py-2 fw-bold text-uppercase">👑 傑作</span>
+                        <span class="badge bg-dark border border-secondary text-light px-2 py-1">SF / ドラマ</span>
+                    </div>
+                    <h1 class="display-3 fw-extrabold text-white mb-2">君の名は。 [Your Name]</h1>
+                    <p class="lead text-light opacity-85 d-none d-md-block col-lg-7 mb-4">見知らぬ二人が目覚めると、互いに入れ替わっているという奇妙な現象に巻き込まれていく。</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls / Prev & Next Buttons -->
+        <button class="carousel-control-prev ps-4" type="button" data-bs-target="#aniVerseHeroSlider" data-bs-slide="prev" style="width: 8%;">
+            <span class="carousel-control-prev-icon bg-dark p-3 rounded-circle border border-secondary shadow" aria-hidden="true"></span>
+            <span class="visually-hidden">前へ</span>
+        </button>
+        <button class="carousel-control-next pe-4" type="button" data-bs-target="#aniVerseHeroSlider" data-bs-slide="next" style="width: 8%;">
+            <span class="carousel-control-next-icon bg-dark p-3 rounded-circle border border-secondary shadow" aria-hidden="true"></span>
+            <span class="visually-hidden">次へ</span>
+        </button>
+    </div>
+    
+    <!-- Movie Cards Section -->
+    <div class="container py-5">
+        <h2 class="text-white mb-4 fw-bold">注目のアニメ映画</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+<!-- Card 1: Spirited Away -->
+          <div class="col">
+            <div class="card h-100 bg-dark text-light border-secondary">
+              <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Spirited Away visual" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title text-white"><b>千と千尋の神隠し (2001)</b></h5>
+                <h6 class="card-subtitle mb-2 text-muted">監督：宮崎駿</h6>
+                <p class="card-text text-light"><b>両親と共に謎の廃墟遊園地に迷い込んでしまった、少し不機嫌な10歳の少女・千尋の物語。両親が魔法で豚に変えられてしまった後、千尋は精霊や神々、不思議な生き物たちが集う広大な湯屋に閉じ込められていることに気づく。</b></p>
+                <p class="card-text text-light"><strong>チケット料金：</strong><b> ~15.00ドル（通常上映 / 特別上映）</b></p>
+                <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#bookingModal" onclick="setMovieTitle('千と千尋の神隠し (2001)')">事前予約</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Your Name -->
+          <div class="col">
+            <div class="card h-100 bg-dark text-light border-secondary">
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Your Name visual" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title text-white"><b>君の名は。 (2016)</b></h5>
+                <h6 class="card-subtitle mb-2 text-muted">監督：新海誠</h6>
+                <p class="card-text text-light"><b>田舎暮らしに憧れる女子高校生の三葉と、東京で暮らす男子高校生の瀧。ある日、2人は互いの体が入れ替わっていることに気づく。深い絆が芽生える中、彼らは迫り来る宇宙的規模の災厄を食い止めるため、時間と運命に抗いながら奔走する。</b></p>
+                <p class="card-text text-light"><strong>チケット料金：</strong><b> ~15.00ドル（通常上映 / 特別上映）</b></p>
+                <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#bookingModal" onclick="setMovieTitle('君の名は。 (2016)')">事前予約</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Princess Mononoke -->
+          <div class="col">
+            <div class="card h-100 bg-dark text-light border-secondary">
+              <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Princess Mononoke visual" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title text-white"><b>もののけ姫 (1997)</b></h5>
+                <h6 class="card-subtitle mb-2 text-muted">監督：宮崎駿</h6>
+                <p class="card-text text-light"><b>神秘的な中世の日本を舞台に、死の呪いに冒されたアシタカヒコは森の奥深くへと旅立ち、森を切り開く人間の集落と、故郷を守ろうとする森の神々やサンとの激しい戦いに巻き込まれていく。</b></p>
+                <p class="card-text text-light"><strong>チケット料金：</strong><b> ~15.00ドル（通常上映 / 特別上映）</b></p>
+                <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#bookingModal" onclick="setMovieTitle('もののけ姫 (1997)')">事前予約</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Akira -->
+          <div class="col">
+            <div class="card h-100 bg-dark text-light border-secondary">
+              <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Akira visual" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title text-white"><b>AKIRA (1988)</b></h5>
+                <h6 class="card-subtitle mb-2 text-muted">監督：大友克洋</h6>
+                <p class="card-text text-light"><b>2019年の巨大都市ネオ東京を舞台に、暴走族のリーダーである金田正太郎と、秘密裏に行われた政府の超能力実験の後に恐ろしく制御不能なサイキック能力に目覚めていく親友の鉄雄の運命を描く。</b></p>
+                <p class="card-text text-light"><strong>チケット料金：</strong> <b>~15.00ドル（通常上映 / 特別上映）</b></p>
+                <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#bookingModal" onclick="setMovieTitle('AKIRA (1988)')">事前予約</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light border border-secondary">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title" id="bookingModalLabel">映画チケット事前予約</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+              <div class="mb-3">
+                <label for="selectedMovie" class="form-label text-muted">選択された映画</label>
+                <input type="text" class="form-control bg-secondary text-white border-0" id="selectedMovie" readonly>
+              </div>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">氏名</label>
+                <input type="text" class="form-control bg-secondary text-white border-0" id="fullName" placeholder="フルネームを入力してください" required>
+              </div>
+              <div class="mb-3">
+                <label for="gmail" class="form-label">Gmail / メールアドレス</label>
+                <input type="email" class="form-control bg-secondary text-white border-0" id="gmail" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">電話番号</label>
+                <input type="tel" class="form-control bg-secondary text-white border-0" id="phone" placeholder="+1234567890" required>
+              </div>
+              <div class="mb-3">
+                <label for="paymentMethod" class="form-label">支払い方法</label>
+                <select class="form-select bg-secondary text-white border-0" id="paymentMethod" required>
+                  <option value="" disabled selected>支払い方法を選択してください</option>
+                  <option value="Credit Card">クレジットカード / デビットカード</option>
+                  <option value="PayPal">PayPal</option>
+                  <option value="Google Pay">Google Pay</option>
+                  <option value="Cash on Screening">上映当日現金払い</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-danger w-100 fw-bold">予約を確定する</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        function setMovieTitle(movieTitle) {
+            document.getElementById('selectedMovie').value = movieTitle;
+        }
+
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('fullName').value;
+            const movie = document.getElementById('selectedMovie').value;
+            
+            var modalEl = document.getElementById('bookingModal');
+            var modal = bootstrap.Modal.getInstance(modalEl);
+            modal.hide();
+
+            alert(`Thanks for booking, ${name}! Your pre-booking for "${movie}" has been successfully recorded. We have sent your ticket details to your email.`);
+            
+            document.getElementById('bookingForm').reset();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

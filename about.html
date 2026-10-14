@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私たちについて - アニメパルス</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #0b0f19;
+            background-image: radial-gradient(circle at 50% 0%, #1a1f35 0%, #0b0f19 75%);
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        .neon-text {
+            text-shadow: 0 0 10px rgba(220, 53, 69, 0.6), 0 0 20px rgba(220, 53, 69, 0.4);
+        }
+        .glass-card {
+            background: rgba(18, 24, 38, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(220, 53, 69, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary shadow-sm">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-danger fw-bold fs-4" href="index.html"><b>アニメパルス</b></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><b>ホーム</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html"><b>概要</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html"><b>サービス</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><b>お問い合わせ</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <header class="position-relative py-5 overflow-hidden border-bottom border-secondary" style="background: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
+        <div class="container position-relative z-1 py-5 text-center">
+            <span class="badge bg-danger px-3 py-2 fw-bold text-uppercase mb-3">⚡ 私たちについて</span>
+            <h1 class="display-3 fw-extrabold text-white mb-3 neon-text">アニバースへの扉</h1>
+            <p class="lead text-light opacity-85 col-lg-8 mx-auto">アニメパルスは、不朽の名作や大ヒット映画のスクリーニング、そして熱狂的なアニメファンが集うコミュニティへと繋がる究極のデジタルポータルです。</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        
+        <!-- Mission & Vision -->
+        <div class="row align-items-center g-5 mb-5">
+            <div class="col-lg-6">
+                <h2 class="text-white fw-bold mb-3">私たちの使命と<span class="text-danger">ビジョン</span></h2>
+                <p class="text-muted mb-4">アニメは単なるアニメーションではありません。それは感情の旅であり、アートフォームであり、世界中の何百万人もの人々を繋ぐ文化です。私たちのプラットフォームは、ファンと最高峰のシネマティック体験を繋ぎます。</p>
+                
+                <div class="d-flex gap-3 mb-3">
+                    <div class="text-danger fs-3"><i class="bi bi-shield-check"></i></div>
+                    <div>
+                        <h5 class="text-white mb-1">公式スクリーニング</h5>
+                        <p class="text-muted small">公式の特別上映会、名作、そしてプレミア作品をファンに直接お届けします。</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex gap-3">
+                    <div class="text-danger fs-3"><i class="bi bi-lightning-charge-fill"></i></div>
+                    <div>
+                        <h5 class="text-white mb-1">超高速プレ予約</h5>
+                        <p class="text-muted small">お気に入りの新作映画のプレミアチケットを、スムーズかつ手軽にご予約いただけます。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="position-relative rounded-3 overflow-hidden shadow-lg border border-secondary">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=800&auto=format&fit=crop" class="w-100" alt="アニメ風のビジュアル" style="height: 350px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Counter Section -->
+        <div class="row text-center g-4 mb-5">
+            <div class="col-md-4">
+                <div class="glass-card p-4 rounded-3">
+                    <h2 class="display-5 fw-bold text-danger mb-1">5万人+</h2>
+                    <p class="text-muted mb-0 fw-semibold">アクティブなオタクコミュニティ</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card p-4 rounded-3">
+                    <h2 class="display-5 fw-bold text-danger mb-1">100作+</h2>
+                    <p class="text-muted mb-0 fw-semibold">厳選された名作</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card p-4 rounded-3">
+                    <h2 class="display-5 fw-bold text-danger mb-1">24/7</h2>
+                    <p class="text-muted mb-0 fw-semibold">サポート＆事前予約</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team / Creators Section -->
+        <div class="text-center mb-5">
+            <span class="badge bg-dark border border-secondary text-light px-3 py-2 mb-2">アーキテクト</span>
+            <h2 class="text-white fw-bold">アニメパルスの裏側</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="glass-card p-4 rounded-3 text-center h-100">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop" class="rounded-circle mb-3 border border-danger shadow" width="100" height="100" style="object-fit: cover;" alt="チームメンバー">
+                    <h5 class="text-white mb-1">田中 アカリ</h5>
+                    <p class="text-danger small mb-3">リードキュレーター兼創設者</p>
+                    <p class="text-muted small">スタジオジブリの名作と没入感のあるシネマティックなストーリーテリングに情熱を注ぐ。</p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="glass-card p-4 rounded-3 text-center h-100">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" class="rounded-circle mb-3 border border-danger shadow" width="100" height="100" style="object-fit: cover;" alt="チームメンバー">
+                    <h5 class="text-white mb-1">高橋 レン</h5>
+                    <p class="text-danger small mb-3">リードUI/UX開発者</p>
+                    <p class="text-muted small">サイバーパンクを愛し、洗練されたレスポンシブなダークウェブインターフェースを手掛ける。</p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="glass-card p-4 rounded-3 text-center h-100">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=400&auto=format&fit=crop" class="rounded-circle mb-3 border border-danger shadow" width="100" height="100" style="object-fit: cover;" alt="チームメンバー">
+                    <h5 class="text-white mb-1">佐藤 ユキ</h5>
+                    <p class="text-danger small mb-3">コミュニティディレクター</p>
+                    <p class="text-muted small">特別上映会やイベントを通じて、世界中のアニメファン同士を結びつける。</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark border-top border-secondary py-4 text-center text-muted">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 <b>アニメパルス (Anime Pulse)</b>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

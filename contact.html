@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - アニメパルス</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #0b0f19;
+            background-image: radial-gradient(circle at 50% 0%, #1a1f35 0%, #0b0f19 75%);
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        .neon-text {
+            text-shadow: 0 0 10px rgba(220, 53, 69, 0.6), 0 0 20px rgba(220, 53, 69, 0.4);
+        }
+        .glass-card {
+            background: rgba(18, 24, 38, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(220, 53, 69, 0.5);
+        }
+        .social-icon-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .social-icon-btn:hover {
+            background: #dc3545;
+            border-color: #dc3545;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 0 15px rgba(220, 53, 69, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary shadow-sm">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="ナビゲーションの切り替え">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-danger fw-bold fs-4" href="index.html"><b>アニメパルス</b></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><b>ホーム</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><b>概要</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html"><b>サービス</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html"><b>お問い合わせ</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- お問い合わせヒーローセクション -->
+    <header class="position-relative py-5 overflow-hidden border-bottom border-secondary" style="background: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
+        <div class="container position-relative z-1 py-5 text-center">
+            <span class="badge bg-danger px-3 py-2 fw-bold text-uppercase mb-3">⚡ お問い合わせ</span>
+            <h1 class="display-3 fw-extrabold text-white mb-3 neon-text">私たちとつながる</h1>
+            <p class="lead text-light opacity-85 col-lg-8 mx-auto">事前予約、上映、またはメンバーシップパスに関するご質問がありますか？メッセージを送信していただければ、サポートチームがすぐにお答えします。</p>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="container py-5">
+        <div class="row g-5 align-items-start">
+            
+            <!-- 左カラム: 情報＆ソーシャル -->
+            <div class="col-lg-5">
+                <h2 class="text-white fw-bold mb-3"><span class="text-danger">オタク</span>について語ろう</h2>
+                <p class="text-muted mb-4">チケットに関するヘルプが必要な場合や、次回の上映週末に向けて名作アニメを提案したい場合など、いつでもお気軽にお問い合わせください。</p>
+                
+                <div class="d-flex align-items-start gap-3 mb-4">
+                    <div class="text-danger fs-3"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div>
+                        <h5 class="text-white mb-1">本社所在地</h5>
+                        <p class="text-muted small mb-0">新東京第7地区 秋葉原ハブ、日本</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-3 mb-4">
+                    <div class="text-danger fs-3"><i class="bi bi-envelope-fill"></i></div>
+                    <div>
+                        <h5 class="text-white mb-1">直通メール</h5>
+                        <p class="text-muted small mb-0">support@animepulse.io</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-3 mb-4">
+                    <div class="text-danger fs-3"><i class="bi bi-headset"></i></div>
+                    <div>
+                        <h5 class="text-white mb-1">サポート時間</h5>
+                        <p class="text-muted small mb-0">月曜日 ～ 日曜日: 24時間365日 バーチャルアシスタンス</p>
+                    </div>
+                </div>
+
+                <h5 class="text-white mb-3">チャンネルをフォロー</h5>
+                <div class="d-flex gap-3">
+                    <a href="#" class="social-icon-btn p-3 rounded-circle fs-5 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;"><i class="bi bi-discord"></i></a>
+                    <a href="#" class="social-icon-btn p-3 rounded-circle fs-5 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-icon-btn p-3 rounded-circle fs-5 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon-btn p-3 rounded-circle fs-5 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- 右カラム: インタラクティブお問い合わせフォーム -->
+            <div class="col-lg-7">
+                <div class="glass-card p-4 p-md-5 rounded-3 shadow-lg">
+                    <h3 class="text-white fw-bold mb-4">メッセージを送信</h3>
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label text-muted">お名前</label>
+                            <input type="text" class="form-control bg-secondary text-white border-0" id="contactName" placeholder="お名前を入力してください" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label text-muted">メールアドレス</label>
+                            <input type="email" class="form-control bg-secondary text-white border-0" id="contactEmail" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label text-muted">件名</label>
+                            <select class="form-select bg-secondary text-white border-0" id="contactSubject" required>
+                                <option value="" disabled selected>件名を選択してください</option>
+                                <option value="Pre-booking Support">事前予約＆チケットの問題</option>
+                                <option value="Movie Request">アニメ映画のリクエスト</option>
+                                <option value="Membership Pass">VIPメンバーシップに関するお問い合わせ</option>
+                                <option value="Other">一般的なフィードバック</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactMessage" class="form-label text-muted">メッセージ</label>
+                            <textarea class="form-control bg-secondary text-white border-0" id="contactMessage" rows="4" placeholder="どのようなお手伝いが必要ですか？" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100 fw-bold py-2 shadow">送信する</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-dark border-top border-secondary py-4 text-center text-muted">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 <b>アニメパルス (Anime Pulse)</b>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('contactName').value;
+            alert(`${name}様、お問い合わせありがとうございます！メッセージが正常に送信されました。まもなくご登録のメールアドレスに返信いたします。`);
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
